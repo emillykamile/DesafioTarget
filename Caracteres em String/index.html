@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Target - Caracteres em String</title>
+</head>
+<body>
+    <!-- Aviso na interface -->
+    <h1>O resultado final, está no console :D</h1>
+    <script>
+        /* Recebe a string digitada pelo usuário*/
+        var inputString = prompt("Digite a string aqui");
+        inputString.length;
+
+        /* Função que inverte os caracteres digitados pelo usuário*/
+        function reverse(s) {
+            var inputString = '';
+
+            for (var i = s.length - 1; i >= 0; i--)
+                inputString += s[i];
+                
+            return inputString;
+            }
+
+        /* Resultado final no console */
+        console.log(reverse(inputString));
+    </script>
+</body>
+</html>

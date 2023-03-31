@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Target - Fibonnaci</title>
+</head>
+<body>
+    <!-- Dentro da TAG script, temos a lógica JS-->
+    <script>
+        /* Recebe o valor */
+        var input = parseInt(prompt("Digite o tamanho da sua sequência."));
+        /* Variáveis com os valores iniciais */
+        var valorA = 0;
+        var valorB = 1;
+        var valorC = 0;
+    
+        /* Lógica com a estrutura de repetição while*/
+        while(true){
+    
+            if(valorC >= input){
+                break;
+            }else{
+                document.write(valorC + " - ")
+                valorC = valorA + valorB;
+                valorB = valorA;
+                valorA = valorC;
+            }
+        }
+    
+    </script>
+</body>
+</html>
